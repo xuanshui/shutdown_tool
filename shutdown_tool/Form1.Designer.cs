@@ -113,9 +113,10 @@
             this.textBox1.Location = new System.Drawing.Point(71, 29);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(643, 64);
+            this.textBox1.Size = new System.Drawing.Size(643, 39);
             this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "                ---V1.0---\r\n   编译日期：2023.2.6（22:44分）";
+            this.textBox1.Text = "V1.0_Beta_2023.2.6_23.10";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox_select_time
