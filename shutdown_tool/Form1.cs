@@ -21,7 +21,7 @@ namespace shutdown_tool
         bool chooseTime = false;
         //倒计时是否有效
         bool countDown = true;
-        //倒计时时间
+        //倒计时时间，单位：分钟
         int countDownTime = 0;
         //Delay函数调整参数，表示1分钟(有6万秒)
         int delayArg = 1000 * 60;
@@ -59,9 +59,11 @@ namespace shutdown_tool
             while (timeStart.AddMilliseconds(mm) > DateTime.Now)
             {
                 Console.WriteLine(DateTime.Now);
-                this.comboBox_select_time.Text = ;
+                //下拉菜单显示倒计时
+                this.comboBox_select_time.Text = DateDiff(timeStart.AddMilliseconds(mm), DateTime.Now);
                 if (!this.countDown)
                 {
+                    this.comboBox_select_time.Text = "请重选时间（分钟）";
                     return false;//未等待足够时间
                 }
                 Application.DoEvents();
@@ -76,7 +78,7 @@ namespace shutdown_tool
                 TimeSpan ts1 = new TimeSpan(DateTime1.Ticks);
                 TimeSpan ts2 = new TimeSpan(DateTime2.Ticks);
                 TimeSpan ts = ts1.Subtract(ts2).Duration();
-                dateDiff = dateDiff.ToString();
+                dateDiff = ts.ToString();
                 //dateDiff = ts.Days.ToString() + "天"
                // + ts.Hours.ToString() + "小时"
                 //+ ts.Minutes.ToString() + "分钟"
@@ -125,7 +127,7 @@ namespace shutdown_tool
         //btn_sleep_count_down
         private void button4_Click(object sender, EventArgs e)
         {
-            this.btn_sleep_count_down.Text = "倒计时中...";
+            this.btn_sleep_count_down.Text = "休眠倒计时...";
             this.btn_sleep_count_down.Enabled = false;
             countDown = true;
 
@@ -151,7 +153,7 @@ namespace shutdown_tool
         //btn_shutdown_count_down
         private void button5_Click(object sender, EventArgs e)
         {
-            this.btn_shutdown_count_down.Text = "倒计时中...";
+            this.btn_shutdown_count_down.Text = "关机倒计时...";
             this.btn_shutdown_count_down.Enabled = false;
             countDown = true;
 
@@ -178,7 +180,7 @@ namespace shutdown_tool
         //btn_reload_count_down
         private void btn_reload_count_down_Click(object sender, EventArgs e)
         {
-            this.btn_reload_count_down.Text = "倒计时中...";
+            this.btn_reload_count_down.Text = "重启倒计时...";
             this.btn_reload_count_down.Enabled = false;
             countDown = true;
 
@@ -231,7 +233,7 @@ namespace shutdown_tool
             this.btn_reload_count_down.Text = "倒计时重启";
 
             this.comboBox_select_time.Enabled = true;
-            this.comboBox_select_time.Text = "请重选时间";
+            this.comboBox_select_time.Text = "请重选时间（分钟）";
 
             this.countDownTime = 0;
         }

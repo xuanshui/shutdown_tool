@@ -77,7 +77,7 @@
             // 
             // btn_sleep_count_down
             // 
-            this.btn_sleep_count_down.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_sleep_count_down.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_sleep_count_down.Location = new System.Drawing.Point(264, 133);
             this.btn_sleep_count_down.Name = "btn_sleep_count_down";
             this.btn_sleep_count_down.Size = new System.Drawing.Size(210, 50);
@@ -88,7 +88,7 @@
             // 
             // btn_shutdown_count_down
             // 
-            this.btn_shutdown_count_down.Font = new System.Drawing.Font("黑体", 10.5F);
+            this.btn_shutdown_count_down.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_shutdown_count_down.Location = new System.Drawing.Point(264, 280);
             this.btn_shutdown_count_down.Name = "btn_shutdown_count_down";
             this.btn_shutdown_count_down.Size = new System.Drawing.Size(210, 50);
@@ -99,7 +99,7 @@
             // 
             // btn_reload_count_down
             // 
-            this.btn_reload_count_down.Font = new System.Drawing.Font("黑体", 10.5F);
+            this.btn_reload_count_down.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_reload_count_down.Location = new System.Drawing.Point(264, 428);
             this.btn_reload_count_down.Name = "btn_reload_count_down";
             this.btn_reload_count_down.Size = new System.Drawing.Size(210, 50);
@@ -110,12 +110,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 28);
+            this.textBox1.Location = new System.Drawing.Point(71, 29);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(662, 36);
+            this.textBox1.Size = new System.Drawing.Size(643, 64);
             this.textBox1.TabIndex = 6;
-            this.textBox1.Text = " 关机工具箱---V1.0---编译日期2023.2.6凌晨1：08";
+            this.textBox1.Text = "                ---V1.0---\r\n   编译日期：2023.2.6（22:44分）";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox_select_time
@@ -135,7 +135,7 @@
             "120",
             "180",
             "240"});
-            this.comboBox_select_time.Location = new System.Drawing.Point(527, 217);
+            this.comboBox_select_time.Location = new System.Drawing.Point(507, 215);
             this.comboBox_select_time.Name = "comboBox_select_time";
             this.comboBox_select_time.Size = new System.Drawing.Size(328, 36);
             this.comboBox_select_time.TabIndex = 7;
@@ -155,7 +155,7 @@
             // 
             // btn_sleep_1_count_down
             // 
-            this.btn_sleep_1_count_down.Font = new System.Drawing.Font("黑体", 10.5F);
+            this.btn_sleep_1_count_down.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_sleep_1_count_down.Location = new System.Drawing.Point(264, 576);
             this.btn_sleep_1_count_down.Name = "btn_sleep_1_count_down";
             this.btn_sleep_1_count_down.Size = new System.Drawing.Size(210, 50);
